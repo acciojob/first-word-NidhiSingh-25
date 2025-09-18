@@ -1,17 +1,16 @@
 function firstWord(s) {
   // your code here
-	 if (!str) return ""; // handle empty string
+	  if (!s) return ""; // handle empty string
 
-  str = str.trim(); // remove leading/trailing spaces
+  s = s.trim(); // remove leading/trailing spaces
 
-  let spaceIndex = str.indexOf(" ");
+  let spaceIndex = s.indexOf(" ");
 
   if (spaceIndex === -1) {
-    return str; // no space found, return entire string
+    return s; // no space found, return entire string
   }
 
-  return str.substring(0, spaceIndex); // return part before space
-
+  return s.substring(0, spaceIndex); // return part before space
 }
 
 // Do not change the code below
